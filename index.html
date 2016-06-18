@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mails</title>
+</head>
+<body>
+<ul data-bind="foreach: cats, click: liClick">
+	<li data-bind="text:name"></li>
+</ul>
+<div id="cat">
+	<h2 id="cat-name" data-bind="text:catName"></h2>
+	<div id="cat-count" data-bind="text:clickCount"></div>
+	<img id="cat-img" alt="cute cat" data-bind="attr: imgAttr, 
+	click: incrementCounter">
+	<!--- style="max-width: 200px;"> -->
+</div>
+
+
+
+
+<script type="text/javascript" src="jquery-3.0.0.js"></script>
+<script type="text/javascript" src="knockout-3.4.0.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
